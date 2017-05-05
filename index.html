@@ -1,0 +1,266 @@
+<!Doctype html>
+	<html lang="en">
+		<head>
+			<title>Terminhector.com - Room Service welcome</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="Website for demonstration purposes">
+			<meta name="keywords" content="HTML,CSS,JavaScript">
+			<meta name="author" content="Hector Tapias">
+			<link rel="stylesheet" href="style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		</head>
+		<body>
+			<div class="blurrme">
+			  <header>
+				<div id="roomServ">
+					<a href="index.html" id="message">Room service</a>
+				</div>
+				<nav>
+					<ul>
+						<li id="menu"><a href="#">Menu</a>
+							<div id="dropDown">
+								<ul id="listme">
+									<li><a href="#brunchMenu">Brunch</a></li>
+									<li><a href="#">Lunch</a></li>
+									<li><a href="#">Dinner</a></li>
+									<li><a href="#">Drinks</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="specials.html">Specials</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="specials.html">About</a></li>
+					</ul>
+				</nav>
+			  </header>
+			  
+			  <div id="caroussel">
+				<ul>
+					<li><img src="images/dining-room.jpg" alt="view of a party room through a window" width="1200" height="400" ></li>
+					<li><img src="images/twinkleLights.jpg" alt="yellow and white twinle lights in a dark background" width="1200" height="400" ></li>
+					<li><img src="images/cook.jpg" alt="chef in a kitchen" width="1200" height="400" ></li>
+					<li><img src="images/bar.jpg" alt="Bar shelf with multiple an assortment of liquor bottles" width="1200" height="400" ></li>
+				</ul>
+			</div>
+			<article>
+			  <div class = "foodItem">
+				<img class="images" src="images/theBurger.jpg" alt="quarter pound house burger" width="323" height="256">
+					<div class="selection">
+					  <p class="desc">Sirloin Burger</p>
+					  <p class="price">$18.99</p>
+						<form class="orderAmount">
+						  <p class="choice"><label>Qty:</label>
+							<select id="selectBurger" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						  </p>
+					    </form>
+						  <p class="displayTotal">Total: $
+							<span id="burgerTotal"  class="itemTotal"></span>
+						  </p>	
+					</div>
+			  </div>
+			  <div class = "foodItem">
+				<img class="images" src="images/pancakes.jpg" alt="golden top pancakes with chocolate chips" width="323" height="256">
+					<div  class="selection">
+					  <p class="desc">Pancakes</p>
+					  <p class="price">$15.99</p>
+						<form class="orderAmount">
+						  <p class="choice" ><label>Qty:</label>
+							<select id="selectPancakes" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						  </p>
+						</form>
+						  <p class="displayTotal">Total: $
+							<span id="pancakeTotal" class="itemTotal"></span>
+						  </p>	
+					</div>
+			  </div>
+			  <div class = "foodItem">
+				<img class="images" src="images/friedEggs.jpg" alt="image of fried eggs on toast" width="323" height="256">
+					<div class="selection">
+					  <p class="desc">Eggs any Style</p>
+					  <p class="price">$8.99</p>
+						<form class="orderAmount">
+						  <p class="choice" ><label>Qty:</label>
+							<select id="selectEggs" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						  </p>
+						</form>
+						  <p class="displayTotal">Total: $
+							<span id="eggsTotal" class="itemTotal"></span>
+						  </p>
+					</div>
+			  </div>
+			  <div class = "foodItem">
+				<img class="images" src="images/coffeeDrinks.jpg" alt="capuccino with late art" width="323" height="256">
+					<div class="selection">
+					  <p class="desc">Coffee Drinks</p>
+					  <p class="price">$6.99</p>
+						<form class="orderAmount">
+						  <p class="choice" ><label>Qty:</label>
+							<select id="selectCoffee" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select></p>
+						</form>
+						  <p class="displayTotal">Total: $
+							<span id="coffeeTotal" class="itemTotal"></span>
+						  </p>
+					</div>
+			  </div>
+			  <div class = "foodItem">
+				<img class="images" src="images/houseWine.jpg" alt="glass of red wine" width="323" height="256">
+					<div class="selection">
+					  <p class="desc" >House Wine</p>
+					  <p class="price">$12.99</p>
+						<form class="orderAmount">
+						  <p class="choice" ><label>Qty:</label>
+							<select id="selectWine" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						  </p>
+						</form>
+					      <p class="displayTotal">Total: $
+							<span id="wineTotal" class="itemTotal"></span>
+						  </p>
+					</div>
+			  </div>
+			  <div class = "foodItem">
+				<img class="images" src="images/fruitParfait.jpg" alt="tall glass fruit parfait with raspberries on the top" width="323" height="256">
+					<div class="selection">
+					  <p class="desc">Fruit Parfait</p>
+					  <p class="price">$7.99</p>
+						<form class="orderAmount" >
+						  <p class="choice" ><label>Qty:</label>
+							<select id="selectParfait" class="pickOne">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						  </p>
+						</form>
+						  <p class="displayTotal">Total: $
+							<span id = "parfaitTotal" class = "itemTotal"></span>
+						  </p>
+					</div>
+			  </div>
+				
+			</article>
+			<article id="brunchMenu">
+				<div id="brunchWrap">
+				<div id="fruitPlate">
+					<img src="images/fruitPlate.jpg" alt="breakfast fruit plate" width="640" height="426">
+				</div>
+				<div id="brunchMsg">
+					<p>Try them <span id="today">today</span></p> 
+				</div>
+				<div id="biscuits">
+					<img src="images/biscuits.jpg" alt="biscuits covered in gravy" width="640" height="426">
+				</div>
+				</div>
+			</article>
+			
+			
+				<div id='shoppingCart'>
+					
+  
+  <p id="counter"></p>
+  <canvas id ='canvas' width="60px" height="32px"></canvas>
+</div>			
+			
+<div id="shoppingCartCheck"><!--check Total -->
+	<button type="button" id="hideMe">X</button>
+	  <table id="tableTotal">
+			<tr class="tableHead"><th colspan="2">Item</th><th colspan="1">Quantity</th><th colspan="1">Price</th></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td class="firstTd" colspan="2"></td><td class="secTd" colspan="1"></td><td class="thirdTd" colspan="1"></td></tr>
+			<tr><td colspan="2"></td><td colspan="1"></td><td colspan="1"></td></tr>
+		  <tfoot>
+			<tr> 
+				<td colspan="2"></td>
+				<td colspan="1">Subtotal:</td>
+				<td colspan="1" class="subtotalSales"></td>
+			</tr>
+		  </tfoot>
+	  </table>
+	<button type="button" id="sendOrder">Place Order</button>
+</div>
+								
+				
+</div><!--end of blurr class-->
+			
+			
+<div id="popup" class="notBlurry">
+	<button type="button" id="closePop"> X </button>
+	<div id="finalMessage">
+		<h1 id="popMessage">Room service</h1>
+		  <h2>Thank you for your order!</h2>
+	</div>
+		<div id="tableWrap">
+	    <table id= "popTable">
+			<tr class="tableHead"><th colspan="2">Item</th><th colspan="1">Quantity</th><th colspan="1">Price</th></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td class="first" colspan="2"></td><td class="sec" colspan="1"></td><td class="third" colspan="1"></td></tr>
+			<tr><td colspan="2"></td><td colspan="1"></td><td colspan="1"></td></tr>
+			<tr>
+				<td colspan="2"></td>
+				<td colspan="1">Tax: $</td>
+				<td colspan="1"class="tax"></td>
+			<tr>
+		  <tfoot>
+			<tr>
+				<td colspan="2"></td>
+				<td colspan="1">Total: $</td>
+				<td colspan="1" class="totalSales"></td>
+			</tr>
+		  </tfoot>
+	    </table>
+		</div>
+</div>
+											
+	<footer>
+		<p>&copy; 2017, Terminhector.com , Inc or its affiliates</p>
+	</footer>
+		<script src="myScript.js"></script>	
+		<script src="canvasCart.js"></script>	
+	</body>
+</html>
