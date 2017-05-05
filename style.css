@@ -1027,7 +1027,10 @@ li a:hover{
 	height:auto;
 	display:block;
 	overflow:hidden;
-	}	
+	}
+#brunchWrap{
+	display:block;
+	}
 #fruitPlate{
 	position:relative;
 	top:10px;
