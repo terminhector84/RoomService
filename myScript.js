@@ -168,21 +168,3 @@ $("#selectBurger, #selectPancakes, #selectEggs, #selectCoffee, #selectWine, #sel
 		});				
 	});	
 });
-
-
-//timer function begins here
-var countdown = 30 * 60 * 1000;
-
-function timer(){
-	countdown -= 1000;
-	var min = Math.floor((countdown % (1000 * 60 * 60)) / (1000 * 60));
-	var sec = Math.floor((countdown % (1000 * 60)) / 1000); 
-	
-		$("#minutes").text(min);
-		$("#seconds").text(sec);
-	
-		if (countdown < 0) {
-			clearInterval(timer);	
-		} 	
-						
-}	//timer function ends
