@@ -1,4 +1,4 @@
-function inme(){
+(function(){
 	var ctx = document.getElementById("canvas").getContext("2d");
 
 	ctx.strokeStyle = "#fff";
@@ -22,6 +22,4 @@ function inme(){
 		ctx.stroke();
 	ctx.closePath();
 	
-}
-
-inme();
+})();
