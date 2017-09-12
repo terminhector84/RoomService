@@ -1,4 +1,4 @@
-   *{
+  *{
 	box-sizing:border-box;	
     }
 body{
@@ -27,9 +27,9 @@ header{
 	line-height: 100px;
 	color:#fff;
 	font-family: Futura, Arial, Helvetica, sans-serif;
-	font-size: 4em;
+	font-size: 2.5em;
 	font-weight: bold;
-	text-shadow: 2px 2px 2px #222;
+	text-shadow: 2px 2px #222;
 	text-align:center;
 	text-decoration:none;
 	display: block;
@@ -43,7 +43,8 @@ nav{
 	clear:both;
 	}
 nav ul {
-	width: 573.5px;
+	width:1280px;
+	margin:0 auto;
 	list-style:none;
 	padding:0px;
 	margin:0px auto;
@@ -63,7 +64,7 @@ nav ul li a{
 	color:#fff;
 	text-decoration:none; 	
 	font-weight:bold;
-	font-size: 1.5em; 
+	font-size: 1.25em; 
 	margin:0px;
 	padding: 8px 16px; 
     }
@@ -107,7 +108,7 @@ li:hover{
 	background:#333;
 	font-weight: bold;
 	font-family:Helvetica;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	text-decoration:none;
 	color:#fff;
 	padding: 10px;
@@ -163,7 +164,7 @@ li:hover{
 	transition: margin-left 0.5s ease-in;
 	}
 article{
-	width:80%;
+	width:1280px;
 	border-top:#e7e7e7;
 	margin:0px auto;
 	padding-bottom:15px;
@@ -171,10 +172,10 @@ article{
 	clear: both;
     }
 .foodItem{
-	width:calc(98%/2);
+	width:50%;
 	border-radius:5px;
 	float:left;
-	padding:20px;
+	padding:10px;
 	}
 .foodItem:nth-child(odd){
 	border-right:2px solid #e7e7e7;
@@ -185,10 +186,9 @@ article{
 	max-width:320px;
 	position:relative;
 	float:left;
-	margin: 0 auto;
 	position:relative;
-	border: orange 4px solid;
-	border-radius: 6px;
+	border: orange 2px solid;
+	border-radius: 5px;
 	}
 .images:hover{
 	-webkit-transform: scale(1.05);
@@ -198,7 +198,7 @@ article{
 	transform: scale(1.05); 
 	}
 .selection{
-	width:45%;
+	width:150px;
 	min-width:281px;
 	height: 250px;
 	background: beige;
@@ -210,14 +210,14 @@ article{
 .desc{
 	width:100%;
 	height: 2em; 
-	font-size: 2.25em; 
+	font-size: 1.75em; 
 	line-height: 2em;
 	margin:0px;
 	}
 .price{
 	width:100%;
 	height: 2em; 
-	font-size: 1.75em; 
+	font-size: 1.5em; 
 	line-height: 2em;
 	color: crimson; 
 	margin:0px;
@@ -225,7 +225,7 @@ article{
 .choice{
 	width:100%;
 	height: 2em; 
-	font-size: 1.5em; 
+	font-size: 1.25em; 
 	line-height: 2em;
 	margin:0px;
 	position:relative;
@@ -233,7 +233,7 @@ article{
 .displayTotal{
 	width: 100%;
 	height: 2em;
-	font-size: 1.5em; 
+	font-size: 1.25em; 
 	line-height: 2em;
 	display: flex;
 	margin:0px;
@@ -241,12 +241,12 @@ article{
 label{
 	width: 80%;
 	height: 2em;
-font-size: 1em; 	
+	font-size: 1em; 	
 	line-height: 2em;
 	}
 .pickOne{
-	height: 2em;
-	line-height:2em;
+	height: 1.5em;
+	line-height:1.5em;
 	font-size: 1em;
 	border-radius:5px;
 	position: relative;
@@ -291,6 +291,22 @@ font-size: 1em;
 	left:32px;
 	bottom:10px;
 	}	
+	
+@-webkit-keyframes glowing {
+			0% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+			50% { background-color: crimson; -webkit-box-shadow: 0 0 40px crimson; text-shadow:0 0 3px #fff; opacity: 0.5; }
+			100% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+		}
+		@-moz-keyframes glowing {
+			0% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+			50% { background-color: crimson; -webkit-box-shadow: 0 0 40px crimson; text-shadow:0 0 3px #fff; opacity: 0.5; }
+			100% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+		}
+		@keyframes glowing {
+			0% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+			50% { background-color: crimson; -webkit-box-shadow: 0 0 40px crimson; text-shadow:0 0 3px #fff; opacity: 0.5; }
+			100% { background-color: orange; -webkit-box-shadow: 0 0 3px orange; text-shadow:0 0 3px #fff; opacity: 1.0;}
+		}
 #shoppingCart{
 	width: 70px;
 	height: 60px;
@@ -304,10 +320,12 @@ font-size: 1em;
 	display: none;
 	cursor: pointer;
 	z-index: 1;
+	animation: glowing 1500ms 2;
 	}
 #shoppingCart:hover{
 	background:orange;
 	}
+
 #canvas{
 	display:block;
 	position:relative;
@@ -338,7 +356,7 @@ font-size: 1em;
 	height:auto;
 	background:#333;
     color:#000;
-	border:3px solid orange;
+	border:2px solid orange;
     border-radius:3px;
 	font-size: 1.25em; 
 	font-weight:400;
@@ -426,18 +444,31 @@ font-size: 1em;
 	background: #ff8533;
 	transition: background ease-in 600ms;
 	}	
+.noScroll{
+	overflow-y:hidden;
+}
+#modal{
+	display:none;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.75);
+	position:fixed;
+	top:0;
+	z-index:100;
+}
+
 #popup{
-	width: 60%;
+	width:960px;
 	height: 95%;
 	background: #fff;
 	font-size: 1.5em;
 	font-weight:400;
 	box-shadow: 0 0 5px 3px #ccc;
 	position: fixed;
-	top:50px;
-	left: 20%;	
+	top:150px;
+	left:25%;	
 	z-index:12;
-	display:none;
+	display:block;
 	}
 #closePop{
 	width:2.5em;
@@ -532,19 +563,24 @@ h3{
 	}		
 footer{
 	width:100%;
-	height:70px;
+	height:120px;
 	background:#333;
 	position:relative;
+	padding-top:25px;
 	bottom:0%;
 	clear:both;
 	}
 footer p{
 	text-align: center;
 	color:#fff;
-	line-height:70px;
+	line-height:25px;
 	font-weight:bold;
 	margin-top:0px;
 	}
+footer p a{
+	color:#fff;
+	line-height: 25px;
+}
 @media only screen and (min-width:1365px) and (max-width:1657px){
 		
 article{width:100%;}
@@ -968,184 +1004,6 @@ h2{
 	}
 #sectionMessage{
 	display:none;
-	}
-}
-	
-@media only screen and (min-width:320px) and (max-width: 480px){
-
-header{
-	width:100%;
-	height:auto;
-	}
-#message{
-	font-size: 2.5em;
-	}
-nav ul{ 
-	width: 100%;
-	max-height: auto;
-	}
-nav ul li {
-	width: 100%;
-	float: none;
-	display:block;
-	border-top: 1px solid #333;	
-	}
-nav ul li:hover{
-	border-bottom:4px solid crimson;
-	}
-li a{
-	text-align:center;
-	padding:0px;
-	line-height:28px;
-	}
-li a:hover{
-	color:#fff;
-
-	}
-#dropDown{ 
-	width: 100%;
-	height:177px;
-	border-top:none;
-	top:46px;
-	}
-#listme{
-	width:99%;
-	padding:0px; 
-	margin:0;
-	}
-#listme li{
-	width:100%;
-	height:40px;
-	line-height:40px;
-	}
-#listme li a{
-	padding:0px;
-	text-align:center;
-	}
-#brunchMenu{
-	width: 100%;
-	height:auto;
-	display:block;
-	overflow:hidden;
-	}
-#brunchWrap{
-	display:block;
-	}
-#fruitPlate{
-	position:relative;
-	top:10px;
-	}
-#fruitPlate img{
-	transform:scale(0.9, 0.6);
-	-webkit-transform:scale(0.9, 0.6);
-	-moz-transform:scale(0.9, 0.6);
-	-o-transform:scale(0.9, 0.6);
-	-ms-transform:scale(0.9, 0.6);
-	position:relative;
-	top:-63px;
-	}
-#biscuits{
-	position:relative;
-	top:5px;
-	}
-#biscuits img{
-	transform:scale(0.9, 0.6);
-	-webkit-transform:scale(0.9, 0.6);
-	-moz-transform:scale(0.9, 0.6);
-	-o-transform:scale(0.9, 0.6);
-	-ms-transform:scale(0.9, 0.6);
-	position:relative;
-	top:-63px;
-	}
-#brunchMenu img{
-	border-radius:6px;
-	top:0;
-	}	
-#brunchMsg{
-	width:100%;
-	padding:0px;
-	}
-#brunchMsg p{
-	margin:0px auto; 
-	}
-#underConstruction{
-	transform:scale(0.7,0.7);
-	top:220px;
-	}
-#caroussel{	display:none;	}
-
-article{
-	width:80%;
-	overflow:hidden;
-    }
-.foodItem{
-	width:100%;
-	display:block;
-	}
-.foodItem:nth-child(odd){
-	border-right:none;
-	box-shadow:none;
-	}
-.images{
-	position:relative;
-	top:-10px;
-	left: -25px;
-	float:none; 
-	}
-.selection{
-	width:80%;
-	min-width:320px;
-	float:none; 
-	display:block;
-	position:relative;
-	top:-10px;
-	left: -25px;
-	}
-#shoppingCart{
-	top:220px;
-	right:15px;
-	}
-
-#shoppingCartCheck{
-	width: 100%;
-	top:0px;
-	left:5px;
-	margin:0 auto;
-	}
-#popup{
-	width:94%;
-	height:auto;
-	top:25px;
-	left:10px;
-	}
-#closePop{
-	top:0x;
-	left:calc(100% - 20px);	
-	}
-#finalMessage{
-	top:-4px;
-	height:140px;
-	margin-bottom:50px;
-}
-#popMessage{
-	top:0px;
-	font-size:2.2em;
-	}
-h2{ 
-	top:0;
-	font-size: 1.5em;
-	height: 80px;
-}
-#tableWrap{
-	width:100%;
-	border-radius:6px;
-	margin:30px 0;
-}
-#popTable{width: 100%;}
-
-#popTable th{
-	height:40px;
-	line-height:40px;
 	}
 }
 
