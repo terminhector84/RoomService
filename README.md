@@ -2,7 +2,7 @@
 
 https://terminhector84.github.io/roomService/
 
-Skills Used
+Skills Used:
 
 •	HTML5
 
@@ -18,4 +18,6 @@ Skills Used
 
 
 
-Other Credits: Images used with copyright free permission from https://unsplash.com/
+Other Credits: 
+
+Images used with copyright free permission from https://unsplash.com/
