@@ -14,9 +14,8 @@ Skills Used
 
 •	Media Queries
 
-•	JavaScript
+•	jQuery
 
-•	Object Oriented JavaScript
 
 
 Other Credits: Images used with copyright free permission from https://unsplash.com/
