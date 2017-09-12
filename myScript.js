@@ -1,4 +1,6 @@
-"use strict";
+(function(){
+	
+	"use strict";
 
 //array of products starts here				
 var cart = [];
@@ -116,9 +118,9 @@ $("#selectBurger, #selectPancakes, #selectEggs, #selectCoffee, #selectWine, #sel
 								'-o-filter': 'blur(5px)',
 								'-ms-filter': 'blur(5px)'
 								});
+				$('body').toggleClass("noScroll");
 								
-				$("#popup").fadeIn(300);
-				setInterval(timer, 1000);
+				$("#modal").fadeIn(300);
 				
 		});
 		
@@ -162,9 +164,13 @@ $("#selectBurger, #selectPancakes, #selectEggs, #selectCoffee, #selectWine, #sel
 			//remove the screen blur
 			$(".blurrme").css("filter", "blur(0)");
 			//hide large popup
-			$("#popup").hide();
+			$("#modal").hide();
+			//restore scroll-y
+			$('body').toggleClass("noScroll");
 			
 			
 		});				
 	});	
 });
+
+})();
